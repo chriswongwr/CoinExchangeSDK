@@ -13,7 +13,7 @@ class Bgogo:
 		}
 		
 	def __init__(self, email, password):
-		self.url = 'https://www.bgogo.com/api'
+		self.url = 'https://bgogo.com/api'
 		self.email = email
 		self.password = hashlib.sha1(password.encode('utf-8')).hexdigest()
 		self.token = self.signin()
